@@ -1,4 +1,4 @@
-# Recommender-System
+# Movie-Recommender-System
 A program that recommends you movies according to your taste
 
 This program uses movielens databse of 100k ratings till 1998. So mentioned movie should be released before 1998.
