@@ -1,7 +1,7 @@
 # Movie-Recommender-System
 A program that recommends you movies according to your taste
 
-This program uses movielens databse of 100k ratings till 1998. So mentioned movie should be released before 1998.
+It is a content based recommendation system that uses movielens databse of 100k ratings till 1998. So mentioned movie should be released before 1998.
 
 This program can recommend movies based on your preferred movie. It used consine simmilarity to 
 check similar movies and recommends movies that are similar to your preference and are above some threshold rating.
