@@ -2,8 +2,8 @@
 A program that recommends you movies according to your taste.
 
 **Used:**
-1. Pearson Corrleation Cofficient
-2. Cosine Similarity
+1. [Pearson Corrleation Cofficient](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)
+2. [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
 
 **Database used:** MovieLens 100k Dataset
 
