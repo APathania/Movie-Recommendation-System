@@ -1,19 +1,20 @@
-# Movie-Recommender-System
-A program that recommends you movies according to your taste
+# Movie-Recommendation-System
+A program that recommends you movies according to your taste.
 
-It is a content based recommendation system that uses movielens databse of 100k ratings till 1998. So mentioned movie should be released before 1998.
+Used:
+1. Pearson Corrleation Cofficient
+2. Cosine Similarity
 
-This program can recommend movies based on your preferred movie. It used consine simmilarity to 
-check similar movies and recommends movies that are similar to your preference and are above some threshold rating.
+Database used: MovieLens 100k Dataset
 
-It queries 4 Parameters:
-1.Name of the movie you prefer.
-2.Percentage of similarity(1-100)
-3.Minimum ratings of recommended movies.
-4.Number of movies to be recommended.
+Description:
+1.It contains two recommendation system,  one based on Collaborative Filtering using Pearson Correlation Cofficient and other Content based using cosine similarity.
 
-If above constraint can't be met then it won't display any movies.
+2.All the functions used in Pearson Correlation Cofficient are defined in pearson_movie_recommend.py and data preprocessing is described in pearson_main.py.
 
-So choose above constraint wisely.
+Usage:
+1.To use pearson_movie_recommend.py alone, you need to pass dictonary of dictonary(Users movie ratings).
+
+2.To use cosine_movie_recommend.py, you just need one movie name, it recommends movies on the basis of genre.
 
 
