@@ -7,13 +7,13 @@ import numpy as np
 
 #fetching user data about ratings of movies
 column_names = ['user_id', 'item_id', 'rating', 'timestamp']
-users = pd.read_csv('u.data', sep='\t', names=column_names)
+users = pd.read_csv('Data\\u.data', sep='\t', names=column_names)
 
 #fetching data about movies according to their features
 i_cols = ['movie id', 'movie title' ,'release date','video release date', 'IMDb URL', 'unknown', 'Action', 'Adventure',
  'Animation', 'Children\'s', 'Comedy', 'Crime', 'Documentary', 'Drama', 'Fantasy',
  'Film-Noir', 'Horror', 'Musical', 'Mystery', 'Romance', 'Sci-Fi', 'Thriller', 'War', 'Western']
-movies = pd.read_csv('u.item', sep='|', names=i_cols,encoding='latin-1')
+movies = pd.read_csv('Data\\u.item', sep='|', names=i_cols,encoding='latin-1')
 
 #creating a table for movies with their average rating (using users dataframe)
 k = pd.DataFrame(users.groupby('item_id')['rating'].mean())
