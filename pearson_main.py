@@ -10,12 +10,12 @@ Examples to extract data from the file and how to use movie_recommend file
 import pearson_movie_recommend as pmr
 
 movies = {}
-for line in open('u.item',encoding='Latin 1'):
+for line in open('Data\\u.item',encoding='Latin 1'):
     (id,title) = line.split('|')[0:2]
     movies[id]=title
     
 prefs = {}
-for line in open('u.data'):
+for line in open('Data\\u.data'):
     user,movieid,rating = line.split('\t')[:3]
     prefs.setdefault(user,{})
     prefs[user][movies[movieid]] = float(rating)
